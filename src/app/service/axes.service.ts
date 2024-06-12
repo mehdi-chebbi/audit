@@ -8,7 +8,7 @@ import { Domain } from '../Model/Domain';
 })
 export class AxesService {
 
-  private baseUrl = 'https://57.152.73.137:8083/axes';
+  private baseUrl = 'http://57.152.73.137:8083/axes';
 
   constructor(private http: HttpClient) { }
 

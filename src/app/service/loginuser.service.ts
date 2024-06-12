@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginuserService {
-private baseUrl="https://57.152.73.137:8083/user/login";
+private baseUrl="http://57.152.73.137:8083/user/login";
   constructor(private httpclient: HttpClient) { }
   loginUser(user:User):Observable<User>{
     console.log(user.id);

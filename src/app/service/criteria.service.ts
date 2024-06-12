@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class CriteriaService {
 
-  private apiUrl = 'https://57.152.73.137:8083/criteria';
+  private apiUrl = 'http://57.152.73.137:8083/criteria';
 
   constructor(private http: HttpClient) {}
 

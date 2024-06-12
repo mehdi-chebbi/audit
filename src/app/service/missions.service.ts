@@ -8,7 +8,7 @@ import { CreateMission, Mission } from '../Model/missions';
 })
 export class MissionsService {
 
-  private baseUrl = 'https://57.152.73.137:8083/Mission';
+  private baseUrl = 'http://57.152.73.137:8083/Mission';
 
   constructor(private http: HttpClient) { }
 
