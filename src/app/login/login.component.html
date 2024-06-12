@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>Dev</title>
     <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,7 +22,7 @@
         <div class="card col-md-6" style="background-color: white; padding: 20px; border-radius: 10px; height: 480px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <img src="assets/images/eyyy.png" alt="Logo" style="width: 190px; height: 100px; margin-bottom: 20px;">
-                
+
                 <form (ngSubmit)="userlogin()" style="margin-top: 20px;">
                     <div class="mb-3">
                         <label for="userId" class="form-label" style="font-weight: bold;">Email</label>
@@ -41,7 +43,7 @@
                             <input type="password" [(ngModel)]="user.email" class="form-control" id="userpasswd"
                                 name="password" placeholder="Entrez votre mot de passe" style="border-radius: 4px; padding: 10px;">
                         </div>
-                        
+
                         <a href="#" style="text-decoration: underline; color: black; font-size: 14px; margin-bottom: 10px; display: block; text-align: right;">
                             Mot de passe oublié?
                         </a>
